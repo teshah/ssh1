@@ -1,0 +1,16 @@
+version: "3.0"
+
+services:
+  hello-world:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+  db:
+    image: mongo
+
+  db2: 
+    image: amazon/dynamodb-local
+  q1: 
+    image: bitnami/kafka
