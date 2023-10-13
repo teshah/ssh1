@@ -1,0 +1,15 @@
+https://glorious-guacamole-5ggv79v77whp6pr-8080.app.github.dev/
+
+Fri Oct 13 10:57:16 UTC 2023@teshah ➜ /workspaces/ssh1 (master) $ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.6 LTS
+Release:        20.04
+Codename:       focal
+@teshah ➜ /workspaces/ssh1 (master) $ ^C
+@teshah ➜ /workspaces/ssh1 (master) $ 
+
+1.  from browser - https://glorious-guacamole-5ggv79v77whp6pr-8080.app.github.dev/ - did not work
+2. curl https://glorious-guacamole-5ggv79v77whp6pr-8080.app.github.dev/ worked
+3. curl https://glorious-guacamole-5ggv79v77whp6pr-8080.app.github.dev/ worked
+4. curl localhost:8080 worked 
