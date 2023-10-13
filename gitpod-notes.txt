@@ -8,3 +8,29 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube v1.31.2 installed
 
 latest minikube https://github.com/kubernetes/minikube/releases
+
+
+start minikube failed
+
+Use "minikube <command> --help" for more information about a given command.
+gitpod /workspace/docker-hello-world-spring-boot (master) $ minikube start
+😄  minikube v1.31.2 on Ubuntu 22.04 (amd64)
+✨  Automatically selected the docker driver. Other choices: ssh, none
+📌  Using Docker driver with root privileges
+👍  Starting control plane node minikube in cluster minikube
+🚜  Pulling base image ...
+💾  Downloading Kubernetes v1.27.4 preload ...
+    > gcr.io/k8s-minikube/kicbase...:  447.62 MiB / 447.62 MiB  100.00% 85.62 M
+    > preloaded-images-k8s-v18-v1...:  393.21 MiB / 393.21 MiB  100.00% 43.74 M
+🔥  Creating docker container (CPUs=2, Memory=16000MB) ...
+✋  Stopping node "minikube"  ...
+🔥  Deleting "minikube" in docker ...
+🤦  StartHost failed, but will try again: creating host: create: provisioning: get ssh host-port: unable to inspect a not running container to get SSH port
+🔥  Creating docker container (CPUs=2, Memory=16000MB) ...
+😿  Failed to start docker container. Running "minikube delete" may fix it: creating host: create: provisioning: get ssh host-port: unable to inspect a not running container to get SSH port
+
+❌  Exiting due to GUEST_PROVISION_CONTAINER_EXITED: Docker container exited prematurely after it was created, consider investigating Docker's performance/health.
+
+gitpod /workspace/docker-hello-world-spring-boot (master) $ 
+
+
