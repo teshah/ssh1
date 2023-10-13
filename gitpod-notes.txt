@@ -1,14 +1,13 @@
 POD OS = Ubuntu 22.04.3 LTS
 package mgr apt
+Ubuntu 22.04.3 LTS
+sudo apt install nmap
 
 install minikube  (from https://minikube.sigs.k8s.io/docs/start/)
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
-minikube v1.31.2 installed
-
-latest minikube https://github.com/kubernetes/minikube/releases
-
+minikube v1.31.2 installed (which is the latest currently - latest minikube https://github.com/kubernetes/minikube/releases )
 
 start minikube failed
 
