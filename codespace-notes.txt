@@ -13,3 +13,22 @@ Codename:       focal
 2. curl https://glorious-guacamole-5ggv79v77whp6pr-8080.app.github.dev/ worked
 3. curl https://glorious-guacamole-5ggv79v77whp6pr-8080.app.github.dev/ worked
 4. curl localhost:8080 worked 
+
+
+minikube start # worked
+kubectl create deployment hello-spring-boot --image=dstar55/docker-hello-world-spring-boot:latest   # worked  - deployment.apps/hello-spring-boot created
+kubectl expose deployment hello-spring-boot --type=NodePort --port=8080 # worked service/hello-spring-boot exposed
+kubectl get service hello-spring-boot # worked
+
+@teshah ➜ /workspaces/ssh1/mydocker2 (master) $ kubectl get service hello-spring-boot
+NAME                TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+hello-spring-boot   NodePort   10.111.250.0   <none>        8080:32410/TCP   49s
+@teshah ➜ /workspaces/ssh1/mydocker2 (master) $ 
+
+minikube service hello-spring-boot --url   # worked http://192.168.49.2:32410
+
+curl http://192.168.49.2:32410  # worked - Hello World
+curl localhost:32410 # failed - curl: (7) Failed to connect to localhost port 32410: Connection refused
+
+
+
